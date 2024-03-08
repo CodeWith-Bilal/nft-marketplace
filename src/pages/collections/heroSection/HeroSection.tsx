@@ -6,7 +6,7 @@ const HeroSection = () => {
 
   return (
     <>
-      <div className="w-[375px] h-[786px] gap-[40px] px-[40px] md:w-[834px] md:h-[541px] md:pt-[40px] md:pb-[80px] md:gap-[30px] lg:w-[1280px] lg:h-[704px] lg:px-[195px] lg:py-[80px] lg:gap-[30px]">
+      <div className="w-[375px] h-[786px] gap-[40px] px-[40px] md:w-[834px] md:h-[541px] md:pt-[40px] md:pb-[80px] md:gap-[30px] lg:w-[1280px] lg:h-[704px] lg:px-[115px] lg:py-[80px] lg:gap-[30px]">
         <div className="w-[315px] h-[706px] md:w-[690px] md:h-[381px] lg:w-[1050px] lg:h-[544px] gap-[30px] lg:gap-[30px]">
           <div className="md:flex md:gap-[30px] lg:flex lg:gap-[30px]">
             <div className="">
