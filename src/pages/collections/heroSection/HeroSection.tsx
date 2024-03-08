@@ -5,99 +5,104 @@ const HeroSection = () => {
   const collections = useSelector((state: RootState) => state.collections.data);
 
   return (
-    <div className="w-full lg:h-[704px] lg:py-[80px] lg:px-[115px] gap-[30px] md:h-[541px] md:py-[40px] md:px-[60px]">
-      <div className="lg-w-[1050px] m-auto gap-[30px] md-w-[834px]">
-        <div className="flex gap-[30px] lg:w-[1050px] md:w-[830px]">
-          <div className="lg:w-[510px] md:w-[330px]">
-            <div className="lg:w-[510px] lg:h-[222px]">
-              <h1 className="font-worksens lg:text-7xl font-semibold md:text-[38px] md:w-[330px] lg:w-[510px]">
+    <>
+      <div className="w-[375px] h-[786px] gap-[40px] px-[40px] md:w-[834px] md:h-[541px] md:pt-[40px] md:pb-[80px] md:gap-[30px] lg:w-[1280px] lg:h-[704px] lg:px-[195px] lg:py-[80px] lg:gap-[30px]">
+        <div className="w-[315px] h-[706px] md:w-[690px] md:h-[381px] lg:w-[1050px] lg:h-[544px] gap-[30px] lg:gap-[30px]">
+          <div className="md:flex md:gap-[30px] lg:flex lg:gap-[30px]">
+            <div className="">
+              <h1 className="text-[28px] md:leading-[45px] lg:leading-[73px] md:text-[38px] lg:text-[67px] font-worksens font-semibold w-[315px] md:w-[330px] lg:w-[510px] lg:h-[222px] h-[78px]">
                 Discover Digital Art & Collect NFTs
               </h1>
-              <p className="font-worksens lg:text-[22px] font-[400] lg:my-7 md:text-[16px] md:my-5 md:w-[330px] lg:w-[510px]">
+              <p className="text-[16px] font-worksens my-4 md:pt-[50px] lg:text-[22px] lg:w-[510px] lg:pt-[0px] lg:pb-4">
                 NFT marketplace UI created with Anima for Figma. Collect, buy
-                and sell art from more than 20k NFT artists.
+                and sell art from more then 20k NFT artists.
               </p>
-              <div className="mb-7">
-                <button className=" cursor-pointer [border:none] py-[19px] pr-[30px] pl-[30px] bg-[#A259FF] rounded-2xl flex flex-row items-center justify-start gap-[0px_12px] whitespace-nowrap">
-                  <div className="h-5 w-5">
-                    <img className="h-5 w-5 relative" alt="" src={rocket} />
-                  </div>
-                  <div className="relative text-base leading-[140%] font-semibold text-text text-center font-worksens">
-                    Get Started
-                  </div>
-                </button>
-              </div>
-              <div className="flex justify-between md:w-[330px] lg:w-[510px]">
-                <div>
-                  <p className="font-spance_mono font-[700] lg:text-[28px] md:text-[22px]">
-                    240k+
-                  </p>
-                  <p className="font-worksens font-[400] lg:text-[24px] md:text-[16px]">
-                    Total Sale
-                  </p>
+              <button className="hidden md:w-[224px] md:h-[60px] lg:w-[224px] lg:h-[60px] cursor-pointer [border:none] px-[40px] py-[0px] bg-[#A259FF] rounded-2xl md:flex lg:flex flex-row items-center justify-center whitespace-nowrap">
+                <div className="h-5 w-5">
+                  <img className="h-5 w-5 relative" alt="" src={rocket} />
                 </div>
-                <div>
-                  <p className="font-spance_mono font-[700] lg:text-[28px] md:text-[22px]">
-                    100k+
-                  </p>
-                  <p className="font-worksens font-[400] text-[24px] lg:text-[24px] md:text-[16px]">
-                    Auctions
-                  </p>
+                <div className="text-[16px] relative text-base leading-[140%] font-semibold text-center font-worksens">
+                  Get Started
                 </div>
-                <div>
-                  <p className="font-spance_mono font-[700] lg:text-[28px] md:text-[22px]">
-                    240k+
-                  </p>
-                  <p className="font-worksens font-[400] text-[24px] lg:text-[24px] md:text-[16px]">
-                    Artists
-                  </p>
-                </div>
-              </div>
+              </button>
             </div>
-          </div>
-          <div className="lg:w-[510px] md:w-[330px] md:h-[330px]">
-            {/* <HeroCard /> */}
-            <div>
-              {collections?.slice(0, 1).map((item, i) => {
-                // Check if the object has a itemid image_url
-                if (item.image_url) {
-                  return (
-                    <div key={i} className="">
-                      <div
-                        key={item.id}
-                        className="bg-[#3b3b3b] rounded-3xl md:w-[330px] md:h-[330px] lg:w-[510px] lg:h-[510px]"
-                      >
+            <div className="md:w-[330px] md:h-[330px]">
+              {collections.slice(0, 1).map((item, i: number) => {
+                return (
+                  <>
+                    <div
+                      key={i}
+                      className="w-[315px] h-[315px] md:w-[330px] md:h-[330px] lg:w-[510px] lg:h-[510px] bg-[#3B3B3B] rounded-2xl md:rounded-2xl lg:rounded-2xl"
+                    >
+                      <div>
                         <img
                           src={item.image_url}
                           alt={item.name}
-                          className="lg:w-[510px] md:w-[330px] object-cover lg:h-[401px] md:h-[250px] rounded-t-3xl"
+                          className="w-[315px] h-[206px] md:w-[330px] md:h-[221px] lg:w-[510px] lg:h-[401px] object-cover rounded-t-2xl md:rounded-t-2xl lg:rounded-t-2xl"
                         />
-                        <div className="py-7 pl-5 md:py-4 lg:py-7">
-                          <h2 className="font-worksens lg:text-2xl md:text-[22px] font-semibold">
-                            {item.name}
-                          </h2>
-                          <div className="flex ">
-                            <img
-                              src={item.image_url}
-                              alt=""
-                              className="lg:w-[30px] md:w-[24px] rounded-full object-cover"
-                            />
-                            <p className="flex justify-center items-center pl-4 md:text-[16px]">
-                              {item.collection.slice(0, 10)}
-                            </p>
-                          </div>
+                      </div>
+                      <div className=" p-[20px] gap-[10px] md:p-[20px] md:gap-[10px] w-[315px] h-[109px] md:w-[330px] md:h-[109px] lg:w-[510px] lg:h-[109px]">
+                        <h1 className="text-[22px] md:test-[22px] font-semibold font-worksens">
+                          {item.name.slice(0, 13)}
+                        </h1>
+                        <div className="w-[275px] h-[24px] gap-[12px] flex">
+                          <img
+                            src={item.image_url}
+                            alt="img"
+                            className="w-[24px] h-[24px] rounded-full"
+                          />
+                          <p className="text-[16px] font-worksens">
+                            {item.collection.slice(0, 10)}
+                          </p>
                         </div>
                       </div>
                     </div>
-                  );
-                }
-                return null; // Skip rendering if there is no image_url
+                  </>
+                );
               })}
+            </div>
+          </div>
+          <div className="mt-[30px] md:m-0 md:p-0 lg:pt-[30px]">
+            <div className="md:hidden">
+              <button className="w-[315px] h-[60px] cursor-pointer [border:none] px-[50px] py-[10px] bg-[#A259FF] rounded-2xl flex flex-row items-center justify-center gap-[12px] whitespace-nowrap">
+                <div className="h-5 w-5">
+                  <img className="h-5 w-5 relative" alt="" src={rocket} />
+                </div>
+                <div className="text-[16px] relative text-base leading-[140%] font-semibold text-text text-center font-worksens">
+                  Get Started
+                </div>
+              </button>
+            </div>
+            <div className="md:p-0 md:m-0 mt-[20px] flex justify-between w-[315px] h-[57px] gap-[30px] md:w-[330px] md:h-[57px] md:gap-[30px] lg:h-[77px] lg:w-[510px] lg:gap-[30px]">
+              <div>
+                <p className="text-[22px] font-spance_mono font-[700] lg:text-[28px] md:text-[22px]">
+                  240k+
+                </p>
+                <p className="text-[16px] font-worksens font-[400] lg:text-[24px] md:text-[16px]">
+                  Total Sale
+                </p>
+              </div>
+              <div>
+                <p className="text-[22px] font-spance_mono font-[700] lg:text-[28px] md:text-[22px]">
+                  100k+
+                </p>
+                <p className="text-[16px] font-worksens font-[400] lg:text-[24px] md:text-[16px]">
+                  Auctions
+                </p>
+              </div>
+              <div>
+                <p className="text-[22px] font-spance_mono font-[700] lg:text-[28px] md:text-[22px]">
+                  240k+
+                </p>
+                <p className="text-[16px] font-worksens font-[400] lg:text-[24px] md:text-[16px]">
+                  Artists
+                </p>
+              </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
+    </>
   );
 };
 

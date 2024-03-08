@@ -10,6 +10,9 @@ module.exports = {
         spance_mono:["h5-space-mono","'Space Mono'"]
         
       },
+      screens:{
+        
+      },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
         "gradient-conic":

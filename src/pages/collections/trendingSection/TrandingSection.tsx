@@ -7,13 +7,13 @@ const TrandingSection = () => {
   const collections = useSelector((state: RootState) => state.collections.data);
 
   const randomNo = useMemo(() => {
-    return Math.floor(Math.random() * collections?.length - 3);
+    return Math.floor(Math.random() * (collections?.length - 3));
   }, [collections?.length]);
 
   return (
-    <div className="w-full lg:h-[836px] lg:py-[80px] lg:px-[115px] md:w-[834px] md:h-[716px] md:py-[40px] md:px-[60px]">
-      <div className="lg:w-[1050px] md:w-[834px] md:h-[716px]">
-        <div className="lg:w-[1050px] md:w-[834px]">
+    <div className="w-full lg:h-[836px] lg:py-[80px] lg:px-[115px] md:w-[834px] md:h-[716px] md:py-[40px] md:px-[60px] sm:w-[375px]">
+      <div className="lg:w-[1050px] md:w-[834px] sm:w-[375px]">
+        <div className="lg:w-[1050px] md:w-[834px] sm:w-[375px]">
           <h1 className="font-worksens lg:text-[38px] font-semibold md:text-[38px]">
             Trending Collection
           </h1>
@@ -28,7 +28,13 @@ const TrandingSection = () => {
                 <TrendingCard
                   item={data}
                   key={i}
-                  view={i < 2 ? "md:flex lg:hidden" : "md:hidden lg:flex"}
+                  view={
+                    i === 0
+                      ? "md:flex lg:flex sm:hidden" // Display on small, medium, and large screens
+                      : i < 2
+                      ? "md:flex lg:flex sm:hidden" // Display on medium screens
+                      : "md:hidden lg:flex sm:hidden" // Display on small screens
+                  }
                 />
               </div>
             );
