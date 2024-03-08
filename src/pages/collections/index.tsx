@@ -1,7 +1,7 @@
 import { useDispatch } from "react-redux";
 // import BrowseCategories from "./browseSection/BrowseSection";
 import HeroSection from "./heroSection/HeroSection";
-// import TrandingSection from "./trendingSection/TrandingSection";
+import TrandingSection from "./trendingSection/TrandingSection";
 import { AppDispatch } from "../../store/store";
 import { useEffect } from "react";
 import { collectionsPics } from "../../store/slices/collections";
@@ -17,7 +17,7 @@ export default function Index() {
   return (
     <>
       <HeroSection />
-      {/* <TrandingSection /> */}
+      <TrandingSection />
       {/* <BrowseCategories /> */}
       {/* <DiscoverSection /> */}
     </>

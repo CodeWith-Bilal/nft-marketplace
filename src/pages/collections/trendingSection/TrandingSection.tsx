@@ -11,32 +11,30 @@ const TrandingSection = () => {
   }, [collections?.length]);
 
   return (
-    <div className="w-full lg:h-[836px] lg:py-[80px] lg:px-[115px] md:w-[834px] md:h-[716px] md:py-[40px] md:px-[60px] sm:w-[375px]">
-      <div className="lg:w-[1050px] md:w-[834px] sm:w-[375px]">
-        <div className="lg:w-[1050px] md:w-[834px] sm:w-[375px]">
-          <h1 className="font-worksens lg:text-[38px] font-semibold md:text-[38px]">
-            Trending Collection
+    <div>
+      <div className="w-[375px] h-[718px] px-[40px] py-[0px] gap-[40px] md:w-[834px] md:h-[716px] md:px-[40px] md:gap-[40px] lg:w-[1280px] lg:h-[836px] lg:px-[110px] lg:py-[80px] lg:gap-[60px]">
+        <div className="w-[315px] h-[93px] gap-[10px] md:w-[690px] lg:w-[1050px] lg:h-[91px] lg:gap-[10px]">
+          <h1 className="text-[28px] md:test-[28px] leading-[39px] font-semibold font-worksens pb-3 lg:text-[38px]">
+            Trending Collections
           </h1>
-          <p className="font-worksens lg:text-[22px] font-[400] lg:my-7 md:text-[16px] md:my-5">
-            Checkout Our Weekly Updated Trending Collection.
+          <p className="font-worksens text-[16px] leading-[22px] lg:text-[22px]">
+            Checkout our weekly updated trending collection.
           </p>
         </div>
-        <div className="flex gap-[30px] ">
+        <div className="mt-[30px] md:w-[690px] md:h-[525px] gap-[30px] md:flex lg:w-[1050px] lg:h-[525px] lg:gap-[30px] lg:flex">
           {collections?.slice(randomNo, randomNo + 3).map((data, i) => {
             return (
-              <div key={i} className="">
-                <TrendingCard
-                  item={data}
-                  key={i}
-                  view={
-                    i === 0
-                      ? "md:flex lg:flex sm:hidden" // Display on small, medium, and large screens
-                      : i < 2
-                      ? "md:flex lg:flex sm:hidden" // Display on medium screens
-                      : "md:hidden lg:flex sm:hidden" // Display on small screens
-                  }
-                />
-              </div>
+              <TrendingCard
+                key={i}
+                item={data}
+                view={
+                  i === 0
+                    ? "flex md:flex lg:flex" // Display on small, medium, and large screens
+                    : i < 2
+                    ? "hidden md:flex lg:flex" // Display on medium screens
+                    : "hidden md:hidden lg:flex" // Display on large screens
+                }
+              />
             );
           })}
         </div>
