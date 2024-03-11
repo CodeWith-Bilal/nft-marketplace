@@ -7,6 +7,8 @@ import { useEffect } from "react";
 import { collectionsPics } from "../../store/slices/collections";
 import DiscoverSection from "./discoverSection/DiscoverSection";
 import Highlights from "./highlights/Highlights";
+import Work from "./work/Work";
+import Subscribe from "./subscribe/Subscribe";
 
 export default function Index() {
   const dispatch = useDispatch<AppDispatch>();
@@ -22,6 +24,8 @@ export default function Index() {
       <BrowseCategories />
       <DiscoverSection />
       <Highlights />
+      <Work />
+      <Subscribe />
     </>
   );
 }
