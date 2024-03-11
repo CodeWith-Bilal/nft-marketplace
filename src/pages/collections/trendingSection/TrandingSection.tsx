@@ -12,7 +12,7 @@ const TrandingSection = () => {
 
   return (
     <div>
-      <div className="w-[375px] h-[718px] px-[40px] py-[0px] gap-[40px] md:w-[834px] md:h-[716px] md:px-[40px] md:gap-[40px] lg:w-[1280px] lg:h-[836px] lg:px-[110px] lg:py-[80px] lg:gap-[60px]">
+      <div className="w-[375px] h-[718px] px-[40px] py-[0px] gap-[40px] md:w-[834px] md:h-[716px] md:px-[115px] md:gap-[40px] lg:w-[1280px] lg:h-[836px] lg:px-[110px] lg:py-[80px] lg:gap-[60px]">
         <div className="w-[315px] h-[93px] gap-[10px] md:w-[690px] lg:w-[1050px] lg:h-[91px] lg:gap-[10px]">
           <h1 className="text-[28px] md:test-[28px] leading-[39px] font-semibold font-worksens pb-3 lg:text-[38px]">
             Trending Collections

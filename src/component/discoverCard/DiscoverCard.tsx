@@ -8,30 +8,47 @@ interface TrendCardData {
 
 interface TrendCardProps {
   item: TrendCardData;
+  view: string;
 }
 
-const DiscoverCard: React.FC<TrendCardProps> = ({ item }) => {
+const DiscoverCard: React.FC<TrendCardProps> = ({ item, view }) => {
   return (
     <>
-      <div className="bg-[#3b3b3b] rounded-3xl md:w-[330px] md:h-[330px] lg:w-[330px] lg:h-[469px]">
+      <div
+        className={`${view} w-[315px] h-[402px] md:w-[330px] md:h-[469px] bg-[#3B3B3B] mt-5 rounded-[20px]`}
+      >
         <img
           src={item.image_url}
           alt={item.name}
-          className="lg:w-[330px] md:w-[330px] object-cover lg:h-[296px] md:h-[250px] rounded-t-2xl"
+          className="w-[315px] h-[238px] md:w-[330px] md:h-[295px] object-cover rounded-t-[20px] gap-[10px]"
         />
-        <div className="py-7 pl-5 md:py-4 lg:py-7">
-          <h2 className="font-worksens lg:text-2xl md:text-[22px] font-semibold">
-            {item.name}
-          </h2>
-          <div className="flex ">
-            <img
-              src={item.image_url}
-              alt=""
-              className="lg:w-[30px] md:w-[24px] rounded-full object-cover"
-            />
-            <p className="flex justify-center items-center pl-4 md:text-[16px]">
-              {item.collection.slice(0, 10)}
-            </p>
+        <div className="w-[315px] h-[164px] md:w-[330px] md:h-[172px] gap-[25px] py-[20px] pl-[25px] md:pl-[30px]">
+          <div className="w-[275px] h-[60px] gap-[5px]">
+            <h1 className="font-worksens font-semibold text-[22px]">
+              {item.name.slice(0, 10)}
+            </h1>
+            <div className="w-[275px] h-[24px] gap-[12px] flex my-[10px]">
+              <img
+                src={item.image_url}
+                alt={item.name.slice(0, 10)}
+                className="w-[24px] h-[24px] rounded-full object-cover"
+              />
+              <p className="font-spance_mono">{item.collection.slice(0, 12)}</p>
+            </div>
+            <div className="w-[275px] h-[34px] grid grid-cols-2 mt-[10px]">
+              <div className="w-[137px] h-[34px] gap-[8px] ">
+                <h2 className="text-[#858584] text-[12px] font-spance_mono">
+                  Price
+                </h2>
+                <p className="font-spance_mono text-[12px]">1.63 ETH</p>
+              </div>
+              <div className="w-[137px] h-[34px] gap-[8px] ">
+                <h2 className="text-[#858584] text-[12px] font-spance_mono">
+                  Highest Bid
+                </h2>
+                <p className="font-spance_mono text-[12px]">0.33 wETH</p>
+              </div>
+            </div>
           </div>
         </div>
       </div>

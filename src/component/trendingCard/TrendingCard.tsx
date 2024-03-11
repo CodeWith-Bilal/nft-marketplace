@@ -20,7 +20,7 @@ const TrendingCard: React.FC<TrendCardProps> = ({ item, view }) => {
         <div className="w-[315px] h-[315px] md:w-[330px] md:h-[330px] lg:w-[330px] lg:h-[330px]">
           <img
             src={item.image_url}
-            alt="image"
+            alt={item.name}
             className="w-[315px] h-[315px] rounded-[20px] md:w-[330px] md:h-[330px] object-cover lg:w-[330px] lg:h-[330px]"
           />
         </div>

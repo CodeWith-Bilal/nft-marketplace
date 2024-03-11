@@ -1,21 +1,77 @@
-// import { nft } from "../assets/constant/constants"
-import { logo } from "../../assets/constant/constants";
+import React, { useState } from "react";
+// import { logo } from "../../assets/constant/constants";
+import { toggler } from "../../assets/constant/constants";
 import { user } from "../../assets/constant/constants";
-const NavBar = () => {
+import { store } from "../../assets/constant/constants";
+
+export default function Header() {
+  const [isNavOpen, setIsNavOpen] = useState(false);
+
+  const toggleNav = () => {
+    setIsNavOpen(!isNavOpen);
+  };
+
   return (
-    <header className="self-stretch bg-background flex flex-row items-center justify-between py-5 px-[30px] gap-[10px]  font-caption-work-sans">
-      <div className="w-[243px] flex flex-row items-center justify-center cursor-pointer">
-        <div className="flex-1 flex flex-row items-center justify-start gap-[12px]">
-          <img className="h-8 w-8 relative" alt="" src={logo} />
-          <div className="flex-1 flex flex-col items-start justify-start pt-[3px] px-0 pb-0">
-            <h1 className="font-spance_mono font-semibold text-base w-full">
-              NFT Marketplace
-            </h1>
+    <nav className="py-5 px-5 md:px-10 bg-[#2B2B2B]">
+      <div className=" flex flex-wrap items-center justify-between mx-auto">
+        <div className="flex flex-wrap items-center">
+          <a
+            href="/"
+            className="flex items-center space-x-3 rtl:space-x-reverse"
+          >
+            <div className="flex justify-center items-end">
+              <img
+                src={store}
+                className="ps-1 md:ms-2 h-[30px] w-[30px] sm:h-[35px] sm:w-[35px] "
+                alt="NFT Marketplace"
+              />
+              <h1 className="font-spance_mono lg text-[22px] font-semibold ml-[20px]">
+                NFT Marketplace
+              </h1>
+            </div>
+          </a>
+        </div>
+        <div className="inline-flex lg:hidden flex-end pe-1">
+          <button
+            onClick={toggleNav}
+            type="button"
+            className="inline-flex items-center w-[22px] h-9 text-sm text-gray-500 lg:hidden "
+            aria-controls="navbar-sticky"
+            aria-expanded={isNavOpen ? "true" : "false"}
+          >
+            <img
+              src={toggler}
+              className={`${
+                isNavOpen ? "rotate-180" : "rotate-0"
+              } ease-in-out duration-50 inline-flex w-[22px] h-[70px]`}
+              alt="Toggler"
+            />
+          </button>
+        </div>
+        <div
+          className={`${
+            isNavOpen ? "block ease-in-out duration-100 p-2" : "hidden"
+          } w-full lg:flex sm:flex-col justify-end items-center md:w-auto lg:w-auto`}
+          id="navbar-sticky"
+        >
+          <div className="flex flex-col md:flex-row lg:flex-row xl:flex-row 2xl:flex-row gap-[15px] md:gap-[40px] items-center text-white text-[18px] font-semibold">
+            <div className="text-md">Marketplace</div>
+            <div className="text-md">Rankings</div>
+            <div className="text-md">Connect a wallet</div>
+            <button
+              type="button"
+              className="px-6 py-3 lg:py-4 bg-purple-500 rounded-[20px] justify-center items-center gap-3 inline-flex"
+            >
+              <div className="w-5 h-5 relative">
+                <img src={user} alt="" />
+              </div>
+              <div className="text-center text-white text-base font-semibold">
+                Sign Up
+              </div>
+            </button>
           </div>
         </div>
       </div>
-    </header>
+    </nav>
   );
-};
-
-export default NavBar;
+}
