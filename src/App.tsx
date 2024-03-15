@@ -1,4 +1,5 @@
 import "./App.css";
+import Footer from "./component/footer/Footer";
 import NavBar from "./component/navbar/NavBar";
 import Home from "./pages/collections";
 
@@ -9,7 +10,7 @@ function App() {
       <main>
         <Home />
       </main>
-      {/* <Footer />       */}
+      <Footer />
     </>
   );
 }

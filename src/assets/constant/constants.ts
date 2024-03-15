@@ -9,6 +9,10 @@ import work from "../images/Setup Wallet Icon.png";
 import work_img from "../images/Create Collection Icon.png";
 import work_image from "../images/Start Earning Icon.png";
 import envelope from "../images/EnvelopeSimple.svg";
+import discord from "../images/DiscordLogo.svg";
+import youtube from "../images/YoutubeLogo.svg";
+import twitter from "../images/TwitterLogo.svg";
+import instagram from "../images/InstagramLogo.svg";
 export {
   nft,
   logo,
@@ -21,4 +25,8 @@ export {
   work_image,
   work_img,
   envelope,
+  youtube,
+  twitter,
+  instagram,
+  discord,
 };

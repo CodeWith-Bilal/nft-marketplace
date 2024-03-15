@@ -25,7 +25,7 @@ const Work = () => {
   ];
   return (
     <>
-      <div className="w-[375px] h-[685px] px-[40px] py-[195px] gap-[40px] md:w-[834px] md:h-[528px] md:px-[115px] md:py-[40px] lg:w-[1280px] lg:h-[738px] lg:py-[80px] lg:px-[115px]">
+      <div className="w-[375px] h-[685px] px-[40px] py-[80px] gap-[40px] md:w-[834px] md:h-[528px] md:px-[115px] md:py-[40px] lg:w-[1280px] lg:h-[738px] lg:py-[80px] lg:px-[115px]">
         <div className="w-[315px] h-[71px] md:w-[690px] md:h-[71px] lg:w-[1050px] lg:h-[91px] gap-[10px]">
           <h1 className="font-worksens text-[28px] font-semibold lg:text-[38px] leading-[45px]">
             How It Works
