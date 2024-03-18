@@ -1,18 +1,27 @@
+import React from "react";
 import "./App.css";
-import Footer from "./component/footer/Footer";
-import NavBar from "./component/navbar/NavBar";
-import Home from "./pages/collections";
+import Header from "./components/navbar/Navbar";
+import Footer from "./components/footer/Footer";
+import { Route, Routes } from "react-router-dom";
+import Home from "./pages/collection";
+import NftCollection from "./pages/nftCollectionPage/NftCollection";
+import NftDetail from "./pages/nftDetailPage/NftDetail";
 
-function App() {
+export default function Index() {
   return (
     <>
-      <NavBar />
+      <Header />
       <main>
-        <Home />
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route
+            path="/collection/:collection_slug"
+            element={<NftCollection />}
+          />
+          <Route path="/nft" element={<NftDetail />} />
+        </Routes>
       </main>
       <Footer />
     </>
   );
 }
-
-export default App;

@@ -1,25 +1,23 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: [
-    "./src/**/*.{js,jsx,ts,tsx}"
-  ],
+  content: ["./src/**/*.{js,jsx,ts,tsx}"],
   theme: {
     extend: {
-      fontFamily:{
-        worksens:["caption-work-sans","'Work Sans'"],
-        spance_mono:["h5-space-mono","'Space Mono'"]
-        
+      colors: {
+        customColor: "#A259FF",
       },
-      screens:{
-        
+      fontFamily: {
+        "work-sans": "Work Sans",
+        "space-mono": "Space Mono",
       },
-      backgroundImage: {
-        "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
-        "gradient-conic":
-          "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
+      screens: {
+        md: { min: "768px" },
+        msc: { min: "834px" },
+        lg: { min: "1024px" },
+        ls: { min: "1280px" },
+        xl: { min: "1440px" },
       },
     },
   },
   plugins: [],
-}
-
+};

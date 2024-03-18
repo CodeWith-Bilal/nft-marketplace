@@ -1,11 +1,17 @@
 import { configureStore } from "@reduxjs/toolkit";
-import collectionsReducer from "./slices/collections";
+import CollectionsReducer from "./slice/collectionsSlice";
+import collectionImgReducer from "./slice/getCollectionSlice";
+import getNftByCollectionReducer from "./slice/getNftByCollectionSlice";
+import getNftReducer from "./slice/getNftSlice";
 
 import { TypedUseSelectorHook, useDispatch, useSelector } from "react-redux";
 
 export const store = configureStore({
   reducer: {
-    collections: collectionsReducer,
+    collections: CollectionsReducer,
+    getCollection: collectionImgReducer,
+    getNftByCollection: getNftByCollectionReducer,
+    getNft: getNftReducer,
   },
 });
 
