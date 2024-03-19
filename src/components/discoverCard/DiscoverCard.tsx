@@ -19,7 +19,7 @@ const DiscoverCard: React.FC<DiscoverCardProps> = ({ item, display }) => {
         </div>
         <div className="w-[315px] md:w-[330px] msc:w-[360px] ls:w-[330px] xl:w-[385px] h-[164px] md:h-[173px] px-[30px] bg-neutral-700 pt-5 pb-[25px] rounded-bl-[20px] rounded-br-[20px] flex flex-col justify-start items-start gap-[25px]">
           <div className="h-[60px] flex flex-col justify-start items-start gap-[5px]">
-            <div className="text-white text-[22px] font-semibold work-sans capitalize leading-[30.80px]">
+            <div className=" text-[22px] font-semibold work-sans capitalize leading-[30.80px]">
               {item.name.slice(0, 15)}
             </div>
             <div className="justify-start items-start gap-3 inline-flex">
@@ -32,7 +32,7 @@ const DiscoverCard: React.FC<DiscoverCardProps> = ({ item, display }) => {
                   />
                 </div>
               </div>
-              <div className="text-white text-[16px] font-normal font-space-mono leading-snug">
+              <div className=" text-[16px] font-normal font-space-mono leading-snug">
                 MoonDancer
               </div>
             </div>
@@ -42,7 +42,7 @@ const DiscoverCard: React.FC<DiscoverCardProps> = ({ item, display }) => {
               <div className="text-zinc-500 text-[12px] font-normal font-space-mono leading-[13.20px]">
                 Price
               </div>
-              <div className="text-white text-[16px] font-normal font-space-mono leading-snug">
+              <div className=" text-[16px] font-normal font-space-mono leading-snug">
                 1.63 ETH
               </div>
             </div>
@@ -50,7 +50,7 @@ const DiscoverCard: React.FC<DiscoverCardProps> = ({ item, display }) => {
               <div className="text-right text-zinc-500 text-[12px] font-normal font-space-mono leading-[13.20px]">
                 Highest Bid
               </div>
-              <div className="text-right text-white text-[16px] font-normal font-space-mono leading-snug">
+              <div className="text-right  text-[16px] font-normal font-space-mono leading-snug">
                 0.33 wETH
               </div>
             </div>

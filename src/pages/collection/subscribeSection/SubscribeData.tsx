@@ -33,14 +33,14 @@ export default function SubscribeData() {
               </div>
               <div className="w-[315px] h-[280px] md:w-[300px] md:h-[280px] ls:w-[425px] ls:h-[272px] gap-[10px] ">
                 <div className="w-[315px] h-[132px] md:w-[300px] md:h-[132px] ls:w-[425px] ls:h-[172px] gap-[10px] ls:gap-[20px] ">
-                  <div className="text-white text-[28px] md:text-[34px] ls:text-[42px] font-semibold font-work-sans msc:leading-[39.2px] ls:leading-[45.6px] ">
+                  <div className=" text-[28px] md:text-[34px] ls:text-[42px] font-semibold font-work-sans msc:leading-[39.2px] ls:leading-[45.6px] ">
                     Join Our Weekly Digest
                   </div>
-                  <div className="text-white text-[16px] ls:text-[22px] font-normal font-work-sans ls:leading-[35.2px] md:my-[15px]">
+                  <div className=" text-[16px] ls:text-[22px] font-normal font-work-sans ls:leading-[35.2px] md:my-[15px]">
                     Get exclusive promotions & updates straight to your inbox.
                   </div>
                 </div>
-                <div className="flex flex-col md:flex-col ls:flex-row text-white w-[315px] ls:flex-nowrap h-[108px] md:w-[300px] md:h-[108px] ls:w-[425px] ls:h-[60px] mt-[20px] md:mt-[30px] ls:py-[16px] gap-[16px] ls:gap-0 ">
+                <div className="flex flex-col md:flex-col ls:flex-row  w-[315px] ls:flex-nowrap h-[108px] md:w-[300px] md:h-[108px] ls:w-[425px] ls:h-[60px] mt-[20px] md:mt-[30px] ls:py-[16px] gap-[16px] ls:gap-0 ">
                   <div className="flex justify-center bg-white rounded-[20px] w-[315px] h-[46px] md:w-[300px] md:h-[46px] ls:w-[425px] ls:h-[60px] md:px-[20px] md:py-[16px] ls:ps-[1px] gap-[12px]">
                     <input
                       className="font-normal outline-none text-[16px] placeholder-[#2B2B2B]"
@@ -56,7 +56,7 @@ export default function SubscribeData() {
                     <div className="w-5 h-5">
                       <img src={envelop} alt="" className="w-5 h-5 relative" />
                     </div>
-                    <div className="text-white font-semibold text-[16px] font-work-sans ">
+                    <div className=" font-semibold text-[16px] font-work-sans ">
                       Subscribe
                     </div>
                   </button>

@@ -70,7 +70,7 @@ const Footer: React.FC = () => {
           </div>
           <br />
           <div className="w-60 lg:ms-[-120px] flex-col justify-start items-start gap-[15px] mt-12 md:mt-14 lg:mt-0 inline-flex">
-            <div className="text-white text-[22px] font-bold font-space-mono capitalize leading-9">
+            <div className=" text-[22px] font-bold font-space-mono capitalize leading-9">
               Explore
             </div>
             <div className="flex-col justify-center pt-[9px] items-start gap-5 flex">
@@ -87,14 +87,14 @@ const Footer: React.FC = () => {
           </div>
           <br />
           <div className="lg:ms-[-80px] w-68 lg:ps-0 flex-col justify-start items-start gap-[15px] mt-12 md:mt-14 lg:mt-0 inline-flex">
-            <div className="text-white text-[22px] font-bold font-space-mono capitalize leading-9">
+            <div className=" text-[22px] font-bold font-space-mono capitalize leading-9">
               Join our weekly digest
             </div>
             <div className="w-68 flex-col justify-start items-start gap-5 flex">
               <div className="w-[300px] md:w-[450px] lg:w-[300px] text-stone-300 text-[17px] font-normal work-sans leading-snug">
                 Get exclusive promotions & updates straight to your inbox.
               </div>
-              <div className="flex flex-col md:flex-row text-white w-[315px] ls:flex-nowrap h-[108px] md:w-[300px] md:h-[80px] ls:w-[425px] ls:h-[60px] ls:pt-[6px] ls:pb-[16px] gap-[16px] ls:gap-0 ">
+              <div className="flex flex-col md:flex-row  w-[315px] ls:flex-nowrap h-[108px] md:w-[300px] md:h-[80px] ls:w-[425px] ls:h-[60px] ls:pt-[6px] ls:pb-[16px] gap-[16px] ls:gap-0 ">
                 <div className="flex justify-center bg-white rounded-[20px] w-[296px] h-[46px] md:w-[300px] md:h-[55px] ls:w-[425px] ls:h-[60px] md:px-[20px] md:py-[16px] ls:ps-[1px] gap-[12px]">
                   <input
                     className="font-normal md:w-[180px] outline-none text-[14px] placeholder-[#2B2B2B]"
@@ -110,7 +110,7 @@ const Footer: React.FC = () => {
                   <div className="w-5 h-5">
                     <img src={envelop} alt="" className="w-5 h-5 relative" />
                   </div>
-                  <div className="text-white font-semibold text-[16px] font-work-sans ">
+                  <div className=" font-semibold text-[16px] font-work-sans ">
                     Subscribe
                   </div>
                 </button>

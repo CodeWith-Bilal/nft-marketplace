@@ -21,10 +21,10 @@ export default function DiscoverData() {
     <div className="w-full h-[1557px] md:h-[700px] lg:h-[780px] flex flex-col justify-center items-center px-[30px] py-[80px] md:pt-[40px] md:pb-[80px] md:px-[40px] lg:px-[0px] ls:px-[110px] xl:px-[10px] lg:py-[80px] 2xl:px-[670px] gap-[40px] lg:gap-[60px] bg-[#2B2B2B]">
       <div className="w-full h-[71px] lg:h-[91px] flex justify-between content-between md:flex-row gap-[100px] ls:px-0">
         <div className="gap-[10px]">
-          <div className="text-white text-[28px] lg:text-[38px] leading-[39.2px] lg:leading-[45.6px] font-work-sans font-semibold">
+          <div className=" text-[28px] lg:text-[38px] leading-[39.2px] lg:leading-[45.6px] font-work-sans font-semibold">
             Discover More NFT's
           </div>
-          <div className="text-white text-[16px] lg:text-[22px] leading-[22.4px] lg:leading-[35.2px] font-work-sans font-normal">
+          <div className=" text-[16px] lg:text-[22px] leading-[22.4px] lg:leading-[35.2px] font-work-sans font-normal">
             Explore new trending NFT's
           </div>
         </div>
@@ -34,7 +34,7 @@ export default function DiscoverData() {
             className="w-[187px] h-[60px] rounded-[20px] border-2 border-[#A259FF] flex flex-row justify-center items-center gap-[12px]"
           >
             <img src={eye} alt="" />
-            <div className="text-white text-[16px] font-work-sans font-normal">
+            <div className=" text-[16px] font-work-sans font-normal">
               See All
             </div>
           </button>
@@ -55,9 +55,7 @@ export default function DiscoverData() {
           className="w-[315px] h-[60px] rounded-[20px] border-2 border-[#A259FF] flex flex-row justify-center items-center gap-[12px]"
         >
           <img src={eye} alt="" />
-          <div className="text-white text-[16px] font-work-sans font-normal">
-            See All
-          </div>
+          <div className=" text-[16px] font-work-sans font-normal">See All</div>
         </button>
       </div>
     </div>

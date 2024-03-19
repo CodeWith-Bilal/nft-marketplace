@@ -11,7 +11,7 @@ export default function DetailNft() {
         <div className="w-8 h-8 relative">
           <img src={globe} alt="" />
         </div>
-        <div className="grow shrink basis-0 text-white text-xl font-normal work-sans leading-9">
+        <div className="grow shrink basis-0  text-xl font-normal work-sans leading-9">
           View on Etherscan
         </div>
       </div>
@@ -19,7 +19,7 @@ export default function DetailNft() {
         <div className="w-8 h-8 relative">
           <img src={globe} alt="" />
         </div>
-        <div className="grow shrink basis-0 text-white text-xl font-normal work-sans leading-9">
+        <div className="grow shrink basis-0  text-xl font-normal work-sans leading-9">
           View Original
         </div>
       </div>

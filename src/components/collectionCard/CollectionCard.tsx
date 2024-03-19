@@ -31,7 +31,7 @@ const CollectionCard: React.FC<CardProps> = ({ item, contract }) => {
       </div>
       <div className="h-[150px] px-5 bg-zinc-800 pt-5 pb-[25px] rounded-bl-[20px] rounded-br-[20px] flex-col justify-start items-start flex">
         <div className="pb-2">
-          <div className="text-white font-semibold work-sans capitalize pb-1">
+          <div className=" font-semibold work-sans capitalize pb-1">
             {item.name.slice(0, 20)}
           </div>
           <div className="flex gap-2 py-[5px]">
@@ -40,7 +40,7 @@ const CollectionCard: React.FC<CardProps> = ({ item, contract }) => {
               src={item.image_url}
               alt=""
             />
-            <div className="text-white font-normal font-space-mono">
+            <div className=" font-normal font-space-mono">
               {item.collection.slice(0, 10)}
             </div>
           </div>
@@ -48,11 +48,11 @@ const CollectionCard: React.FC<CardProps> = ({ item, contract }) => {
         <div className="inline-flex justify-between items-center font-space-mono mx-auto gap-[130px]">
           <div className="flex-col flex justify-between">
             <div className="text-[12px] text-zinc-500">Price</div>
-            <div className="text-[12px] text-white">1.63 ETH</div>
+            <div className="text-[12px] ">1.63 ETH</div>
           </div>
           <div className="flex-col">
             <div className="text-[12px] text-zinc-500">Highest Bid</div>
-            <div className="text-[12px] text-white">0.33 wETH</div>
+            <div className="text-[12px] ">0.33 wETH</div>
           </div>
         </div>
       </div>

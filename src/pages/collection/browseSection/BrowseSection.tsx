@@ -20,7 +20,7 @@ export default function BrowseData() {
   return (
     <div className="w-full h-[1084px] md:h-[629px] msc:h-[629px] ls:h-[928px] flex flex-col items-center px-0 py-[40px] msc:px-[40px] ls:px-[100px] ls:py-[80px] gap-[40px] ls:gap-[60px] bg-[#2B2B2B]">
       <div className="w-full h-[46px] msc:h-[39px] ls:h-[46px] flex px-7 md:px-[60px] msc:px-0 lg:px-0 ls:px-0 justify-start">
-        <div className="text-white  text-[28px] ls:text-[38px] font-work-sans font-semibold">
+        <div className="  text-[28px] ls:text-[38px] font-work-sans font-semibold">
           Browse Categories
         </div>
       </div>

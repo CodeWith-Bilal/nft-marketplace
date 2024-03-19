@@ -13,18 +13,20 @@ export default function NftCollection() {
 
   const dispatch = useAppDispatch();
 
-  const { data: getCollection, isLoading: isLoadingCollections } =
-    useAppSelector((state) => state.getCollection);
+  const { data: getCollection, isLoading: isLoading } = useAppSelector(
+    (state) => state.getCollection
+  );
 
-  const { data: getNftByCollection, isLoading: isLoadingGetNftByCollection } =
-    useAppSelector((state) => state.getNftByCollection);
+  const { data: getNftByCollection, isLoading: Loading } = useAppSelector(
+    (state) => state.getNftByCollection
+  );
 
   useEffect(() => {
     dispatch(getCollectionImages(collection_slug!));
     dispatch(getNftByCollectionImages(collection_slug!));
   }, [collection_slug, dispatch]);
 
-  if (isLoadingCollections && isLoadingGetNftByCollection) {
+  if (isLoading && Loading) {
     return <Loader />;
   }
 
@@ -32,10 +34,10 @@ export default function NftCollection() {
     <>
       <div className="py-7 md:px-16 lg:px-[110px]">
         <div className="w-full bg-[#2B2B2B] flex-col justify-start items-start inline-flex leading-9">
-          <div className="py-4 text-white text-4xl sm:text-5xl font-semibold work-sans capitalize">
+          <div className="py-4  text-4xl sm:text-5xl font-semibold work-sans capitalize">
             {collection_slug}
           </div>
-          <div className="py-3 text-white text-lg sm:text-xl font-normal work-sans">
+          <div className="py-3  text-lg sm:text-xl font-normal work-sans">
             Browse through more than 50k NFTs on the NFT Marketplace.
           </div>
           <div className="w-full py-5">
@@ -51,7 +53,7 @@ export default function NftCollection() {
         </div>
       </div>
       <div className="border-neutral-400 h-[1px] bg-zinc-700 w-full" />
-      <div className="text-white flex mx-auto flex-row justify-center font-bold text-[30px] items-center work-sans py-8">
+      <div className=" flex mx-auto flex-row justify-center font-bold text-[30px] items-center work-sans py-8">
         <h1 className="">
           NFTs{" "}
           <span className="w-[50px] h-[32px] bg-neutral-400 rounded-[20px] font-space-mono mx-2 px-5 py-2">

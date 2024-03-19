@@ -14,7 +14,7 @@ const BrowseCard: React.FC<BrowseCardProps> = ({ item }) => {
           />
         </div>
         <div className="w-[147.5px] h-[67px] md:w-[150px] msc:w-[165px] msc:h-[67px] ls:w-[243px] ls:h-[76px] xl:w-80 bg-[#3B3B3B] rounded-bl-[20px] rounded-br-[20px] pt-[20px] pb-[25px] px-[20px] msc:pt-[20px] msc:pb-[25px] msc:px-[20px] ls:pt-[20px] ls:pb-[25px] ls:px-[30px] gap-[25px]">
-          <div className="text-white msc:text-[16px] ls:text-[22px] font-semibold font-work-sans msc:leading-[22.4px] lg:leading-[30.80px] justify-start">
+          <div className=" msc:text-[16px] ls:text-[22px] font-semibold font-work-sans msc:leading-[22.4px] lg:leading-[30.80px] justify-start">
             {item.name.slice(0, 8)}
           </div>
         </div>

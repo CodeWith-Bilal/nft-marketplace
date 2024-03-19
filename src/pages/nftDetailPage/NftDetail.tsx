@@ -61,7 +61,7 @@ export default function NftDetail() {
       <div className="w-full px-5 md:px-20 py-10 bg-zinc-800 flex-col justify-between inline-flex">
         <div className="flex flex-col md:flex-row justify-between items-start">
           <div className="py-4">
-            <div className="text-white text-3xl sm:text-5xl md:text-4xl lg:text-5xl font-semibold work-sans capitalize mb-3">
+            <div className=" text-3xl sm:text-5xl md:text-4xl lg:text-5xl font-semibold work-sans capitalize mb-3">
               {getNft?.name.slice(0, 20)}
             </div>
             <div className="text-zinc-400 text-xl md:text-lg font-normal work-sans leading-9">
@@ -91,7 +91,7 @@ export default function NftDetail() {
                 alt=""
               />
             </div>
-            <div className="text-white text-lg font-semibold work-sans capitalize leading-loose">
+            <div className=" text-lg font-semibold work-sans capitalize leading-loose">
               {getNft?.collection}
             </div>
           </div>
@@ -100,7 +100,7 @@ export default function NftDetail() {
           <div className="text-zinc-500 text-[18px] font-normal font-space-mono capitalize leading-9">
             Description
           </div>
-          <div className="md:w-[450px] lg:w-[700px] xl:w-[800px] text-white text-lg font-normal work-sans leading-9">
+          <div className="md:w-[450px] lg:w-[700px] xl:w-[800px]  text-lg font-normal work-sans leading-9">
             {getNft?.description && getNft?.description.length > 0 ? (
               getNft?.description
             ) : (

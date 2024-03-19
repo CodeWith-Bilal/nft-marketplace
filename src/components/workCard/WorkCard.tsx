@@ -12,10 +12,10 @@ const WorkCard: React.FC<WorkCardProps> = ({ image, name, description }) => {
         />
       </div>
       <div className="w-[155px] md:w-full h-[117px] md:h-[100px] lg:h-[129px] flex-col items-center gap-[10px] flex">
-        <div className="text-center text-white text-[16px] lg:text-[22px] font-semibold font-work-sans capitalize leading-[30.80px]">
+        <div className="text-center  text-[16px] lg:text-[22px] font-semibold font-work-sans capitalize leading-[30.80px]">
           {name}
         </div>
-        <div className="text-center text-[12px] md:text-[12px] lg:text-[16px] text-white font-normal font-work-sans leading-[16.8px] lg:leading-[22.4px]">
+        <div className="text-center text-[12px] md:text-[12px] lg:text-[16px]  font-normal font-work-sans leading-[16.8px] lg:leading-[22.4px]">
           {description}
         </div>
       </div>

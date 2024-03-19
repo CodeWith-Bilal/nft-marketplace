@@ -37,11 +37,11 @@ export default function HighlightsData() {
                           />
                         </div>
                       </div>
-                      <div className="z-50 text-white text-base font-normal work-sans leading-snug">
+                      <div className="z-50  text-base font-normal work-sans leading-snug">
                         Shroomie
                       </div>
                     </div>
-                    <div className="z-50 text-white text-[38px] lg:text-[51px] font-semibold work-sans capitalize leading-[56.10px]">
+                    <div className="z-50  text-[38px] lg:text-[51px] font-semibold work-sans capitalize leading-[56.10px]">
                       {item.name}
                     </div>
                     <button

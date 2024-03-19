@@ -7,7 +7,7 @@ export default function TagsNft() {
         Tags
       </div>
       <div className="justify-start items-start inline-flex gap-5">
-        <div className="w-[120px] lg:w-full text-white flex-wrap text-base work-sans uppercase gap-5">
+        <div className="w-[120px] lg:w-full  flex-wrap text-base work-sans uppercase gap-5">
           <button type="button" className="bg-zinc-700 rounded-full py-3 px-7">
             Animation
           </button>

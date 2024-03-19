@@ -37,7 +37,7 @@ const TrendCard: React.FC<TrendCardProps> = ({ item, display }) => {
             </div>
             <div className="w-[95px] h-[95px] msc:w-[110px] msc:h-[110px] ls:w-[100px] ls:h-[100px] px-[14px] py-8 bg-purple-500 rounded-[20px] flex-col justify-center items-center gap-2.5 inline-flex">
               <Link to={`/collection/${item.collection}`}>
-                <div className="text-center text-white text-[22px] font-bold font-space-mono">
+                <div className="text-center  text-[22px] font-bold font-space-mono">
                   1025+
                 </div>
               </Link>
@@ -45,7 +45,7 @@ const TrendCard: React.FC<TrendCardProps> = ({ item, display }) => {
           </div>
         </div>
         <div className="w-[315px] h-[65px] msc:w-[362px] ls:w-[330px]  msc:h-[65px] flex flex-col justify-start items-start gap-2.5">
-          <div className="text-white text-[22px] font-semibold font-work-sans leading-[30.8px]">
+          <div className=" text-[22px] font-semibold font-work-sans leading-[30.8px]">
             {item.name.slice(0, 15)}
           </div>
           <div className="h-[24px] rounded-[20px] gap-3 inline-flex flex-row">
@@ -56,7 +56,7 @@ const TrendCard: React.FC<TrendCardProps> = ({ item, display }) => {
                 alt=""
               />
             </div>
-            <div className="text-white text-[16px] font-normal font-work-sans leading-[22.4px]">
+            <div className=" text-[16px] font-normal font-work-sans leading-[22.4px]">
               {item.collection.slice(0, 15)}
             </div>
           </div>

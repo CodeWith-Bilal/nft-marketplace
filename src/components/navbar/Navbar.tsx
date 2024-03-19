@@ -57,7 +57,7 @@ export default function Header() {
           } w-full lg:flex sm:flex-col justify-end items-center md:w-auto lg:w-auto`}
           id="navbar-sticky"
         >
-          <div className="flex flex-col md:flex-row lg:flex-row xl:flex-row 2xl:flex-row gap-[15px] md:gap-[40px] items-center text-white text-[18px] font-semibold">
+          <div className="flex flex-col md:flex-row lg:flex-row xl:flex-row 2xl:flex-row gap-[15px] md:gap-[40px] items-center  text-[18px] font-semibold">
             <div className="text-md">Marketplace</div>
             <div className="text-md">Rankings</div>
             <div className="text-md">Connect a wallet</div>
@@ -68,7 +68,7 @@ export default function Header() {
               <div className="w-5 h-5 relative">
                 <img src={user} alt="" />
               </div>
-              <div className="text-center text-white text-base font-semibold">
+              <div className="text-center  text-base font-semibold">
                 Sign Up
               </div>
             </button>
