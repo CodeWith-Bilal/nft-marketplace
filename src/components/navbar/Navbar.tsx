@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import logo from "../../assets/NFT Marketplace.svg";
 import toggler from "../../assets/Burger Menu.svg";
 import user from "../../assets/User.svg";
 import store from "../../assets/Storefront.svg";
@@ -26,11 +25,9 @@ export default function Header() {
                 className="ps-1 md:ms-2 h-[30px] w-[30px] sm:h-[35px] sm:w-[35px] "
                 alt="NFT Logo"
               />
-              <img
-                src={logo}
-                className="ps-1 mb-[2px] md:ms-2 h-[18px] w-[180px] sm:h-[22px] sm:w-[200px]"
-                alt="NFT Logo"
-              />
+              <h1 className="font-space-mono font-semibold text-[22px] ml-4">
+                NFT Marketplace
+              </h1>
             </div>
           </Link>
         </div>

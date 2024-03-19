@@ -1,5 +1,4 @@
 import React from "react";
-import logo from "../../assets/NFT Marketplace.svg";
 import store from "../../assets/Storefront.svg";
 import discord from "../../assets/DiscordLogo.svg";
 import youtube from "../../assets/YoutubeLogo.svg";
@@ -26,11 +25,9 @@ const Footer: React.FC = () => {
                       className="h-[30px] w-[30px] sm:h-[35px] sm:w-[35px] "
                       alt="NFT "
                     />
-                    <img
-                      src={logo}
-                      className="ps-1 mt-3 md:ms-2 h-[18px] w-[180px] sm:h-[22px] sm:w-[200px]"
-                      alt=" Logo"
-                    />
+                    <h1 className="font-space-mono text-[22px] font-semibold ml-3">
+                      NFT Marketplace
+                    </h1>
                   </div>
                 </Link>
               </div>

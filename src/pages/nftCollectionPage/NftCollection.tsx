@@ -13,9 +13,8 @@ export default function NftCollection() {
 
   const dispatch = useAppDispatch();
 
-  const { data: getCollection, isLoading: isLoading } = useAppSelector(
-    (state) => state.getCollection
-  );
+  const { data: getCollection, isLoading: isLoadingCollection } =
+    useAppSelector((state) => state.getCollection);
 
   const { data: getNftByCollection, isLoading: Loading } = useAppSelector(
     (state) => state.getNftByCollection
@@ -26,7 +25,7 @@ export default function NftCollection() {
     dispatch(getNftByCollectionImages(collection_slug!));
   }, [collection_slug, dispatch]);
 
-  if (isLoading && Loading) {
+  if (isLoadingCollection && Loading) {
     return <Loader />;
   }
 
