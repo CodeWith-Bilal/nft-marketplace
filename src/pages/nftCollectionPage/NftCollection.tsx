@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 import { useAppDispatch, useAppSelector } from "../../store/store";
-import search from "../../assets/MagnifyingGlass.svg";
+import { MagnifyingGlass } from "../../assets/constants/constants";
 import { Link, useParams } from "react-router-dom";
 import CollectionCard from "../../components/collectionCard/CollectionCard";
 import Loader from "../../components/loader/Loader";
@@ -46,7 +46,7 @@ export default function NftCollection() {
                 placeholder="Search your favorite NFTs"
                 className="w-full text-zinc-500 bg-[#2B2B2B] outline-none"
               />
-              <img src={search} alt="" />
+              <img src={MagnifyingGlass} alt="" />
             </div>
           </div>
         </div>

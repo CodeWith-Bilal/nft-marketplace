@@ -1,6 +1,5 @@
 import React from "react";
-import globe from "../../assets/Globe.svg";
-
+import { Globe } from "../../assets/constants/constants";
 export default function DetailNft() {
   return (
     <>
@@ -9,7 +8,7 @@ export default function DetailNft() {
       </div>
       <div className="justify-start items-start gap-2.5 inline-flex">
         <div className="w-8 h-8 relative">
-          <img src={globe} alt="" />
+          <img src={Globe} alt="" />
         </div>
         <div className="grow shrink basis-0  text-xl font-normal work-sans leading-9">
           View on Etherscan
@@ -17,7 +16,7 @@ export default function DetailNft() {
       </div>
       <div className="justify-start items-start gap-2.5 inline-flex">
         <div className="w-8 h-8 relative">
-          <img src={globe} alt="" />
+          <img src={Globe} alt="" />
         </div>
         <div className="grow shrink basis-0  text-xl font-normal work-sans leading-9">
           View Original

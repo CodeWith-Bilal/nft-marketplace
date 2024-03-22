@@ -1,6 +1,6 @@
 import React from "react";
 import { useAppSelector } from "../../../store/store";
-import rocket from "../../../assets/RocketLaunch.svg";
+import { Rocket } from "../../../assets/constants/constants";
 import { Link } from "react-router-dom";
 import Loader from "../../../components/loader/Loader";
 
@@ -65,7 +65,7 @@ export default function HeroData() {
                   className="flex flex-row justify-center items-center"
                 >
                   <div className="w-5 h-5">
-                    <img src={rocket} alt="" className="w-5 h-5 relative" />
+                    <img src={Rocket} alt="" className="w-5 h-5 relative" />
                   </div>
                   <div className=" text-[16px] font-semibold items-center font-work-sans leading-[22.4px]">
                     Get Started
@@ -99,7 +99,7 @@ export default function HeroData() {
                 </div>
               </div>
             </div>
-            {/* hidden md:block */}
+
             <div
               className={`hidden md:block md:w-full md:h-[381px] lg:w-[1050px] lg:h-[544px]`}
             >
@@ -120,7 +120,7 @@ export default function HeroData() {
                       className="flex flex-row justify-center items-center"
                     >
                       <div className="w-5 h-5">
-                        <img src={rocket} alt="" className="w-5 h-5 relative" />
+                        <img src={Rocket} alt="" className="w-5 h-5 relative" />
                       </div>
                       <div className=" text-[16px] ps-[10px] font-semibold items-center font-work-sans leading-[22.4px]">
                         Get Started

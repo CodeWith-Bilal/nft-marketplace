@@ -3,7 +3,7 @@ import {
   GetNftByCollectionData,
   GetNftByCollectionState,
 } from "../../types/Types";
-import axios from "axios";
+import axiosInstance from "../../instance/instance";
 
 const initialState: GetNftByCollectionState = {
   data: [],
@@ -23,7 +23,7 @@ export const getNftByCollectionImages = createAsyncThunk(
           "x-api-key": process.env.REACT_APP_API_KEY,
         },
       };
-      const res = await axios.get(getNftByCollectionUrl, options);
+      const res = await axiosInstance.get(getNftByCollectionUrl, options);
       const result: GetNftByCollectionData[] = res.data.nfts;
       return result;
     } catch (error) {

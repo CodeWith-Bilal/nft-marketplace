@@ -2,22 +2,22 @@ import React from "react";
 import { Link } from "react-router-dom";
 import { DiscoverCardProps } from "../../types/Types";
 
-const DiscoverCard: React.FC<DiscoverCardProps> = ({ item, display }) => {
+const DiscoverCard: React.FC<DiscoverCardProps> = ({ item, view }) => {
   return (
     <>
       <div
-        className={`${display} w-[315px] md:w-[330px] msc:w-[360px] ls:w-[330px] xl:w-[385px] h-[402px] md:h-[469px] bg-neutral-700 rounded-[20px] flex-col justify-center items-center mb-3`}
+        className={`${view} w-[315px] md:w-[330px] sm:w-[360px] ls:w-[330px] xl:w-[385px] h-[402px] md:h-[469px] bg-neutral-700 rounded-[20px] flex-col justify-center items-center mb-3`}
       >
-        <div className="w-[315px] md:w-[330px] msc:w-[360px] ls:w-[330px] xl:w-[385px] h-[238px] md:h-[296px] rounded-tl-[20px] rounded-tr-[20px] flex-col justify-start items-start gap-2.5 flex">
+        <div className="w-[315px] md:w-[330px] sm:w-[360px] ls:w-[330px] xl:w-[385px] h-[238px] md:h-[296px] rounded-tl-[20px] rounded-tr-[20px] flex-col justify-start items-start gap-2.5 flex">
           <Link to={`/collection/${item.collection}`}>
             <img
-              className="w-[315px] md:w-[330px] msc:w-[360px] ls:w-[330px] xl:w-[385px] h-[238px] md:h-[296px] rounded-tl-[20px] rounded-tr-[20px] object-cover"
+              className="w-[315px] md:w-[330px] sm:w-[360px] ls:w-[330px] xl:w-[385px] h-[238px] md:h-[296px] rounded-tl-[20px] rounded-tr-[20px] object-cover"
               src={item.image_url}
               alt={item.collection.slice(0, 15)}
             />
           </Link>
         </div>
-        <div className="w-[315px] md:w-[330px] msc:w-[360px] ls:w-[330px] xl:w-[385px] h-[164px] md:h-[173px] px-[30px] bg-neutral-700 pt-5 pb-[25px] rounded-bl-[20px] rounded-br-[20px] flex flex-col justify-start items-start gap-[25px]">
+        <div className="w-[315px] md:w-[330px] sm:w-[360px] ls:w-[330px] xl:w-[385px] h-[164px] md:h-[173px] px-[30px] bg-neutral-700 pt-5 pb-[25px] rounded-bl-[20px] rounded-br-[20px] flex flex-col justify-start items-start gap-[25px]">
           <div className="h-[60px] flex flex-col justify-start items-start gap-[5px]">
             <div className=" text-[22px] font-semibold work-sans capitalize leading-[30.80px]">
               {item.name.slice(0, 15)}

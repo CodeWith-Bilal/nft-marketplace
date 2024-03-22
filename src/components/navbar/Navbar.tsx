@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import toggler from "../../assets/Burger Menu.svg";
-import user from "../../assets/User.svg";
-import store from "../../assets/Storefront.svg";
+import { Burger } from "../../assets/constants/constants";
+import { User } from "../../assets/constants/constants";
+import { Storefront } from "../../assets/constants/constants";
 
 export default function Header() {
   const [isNavOpen, setIsNavOpen] = useState(false);
@@ -21,7 +21,7 @@ export default function Header() {
           >
             <div className="flex justify-center items-end">
               <img
-                src={store}
+                src={Storefront}
                 className="ps-1 md:ms-2 h-[30px] w-[30px] sm:h-[35px] sm:w-[35px] "
                 alt="NFT Logo"
               />
@@ -40,7 +40,7 @@ export default function Header() {
             aria-expanded={isNavOpen ? "true" : "false"}
           >
             <img
-              src={toggler}
+              src={Burger}
               className={`${
                 isNavOpen ? "rotate-180" : "rotate-0"
               } ease-in-out duration-50 inline-flex w-[22px] h-[70px]`}
@@ -63,7 +63,7 @@ export default function Header() {
               className="px-6 py-3 lg:py-4 bg-purple-500 rounded-[20px] justify-center items-center gap-3 inline-flex"
             >
               <div className="w-5 h-5 relative">
-                <img src={user} alt="" />
+                <img src={User} alt="" />
               </div>
               <div className="text-center  text-base font-semibold">
                 Sign Up

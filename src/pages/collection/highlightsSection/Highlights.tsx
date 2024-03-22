@@ -1,6 +1,6 @@
 import React from "react";
 import { useAppSelector } from "../../../store/store";
-import eye from "../../../assets/Eye.svg";
+import { Eye } from "../../../assets/constants/constants";
 import Loader from "../../../components/loader/Loader";
 
 export default function HighlightsData() {
@@ -49,7 +49,7 @@ export default function HighlightsData() {
                       className="w-[315px] md:w-[198px] z-50 h-[60px] px-[50px] py-[22px] bg-white rounded-[20px] justify-center items-center gap-3 inline-flex"
                     >
                       <div className="w-5 h-5 relative">
-                        <img src={eye} alt="" />
+                        <img src={Eye} alt="" />
                       </div>
                       <div className="text-center text-zinc-800 text-base font-semibold work-sans leading-snug">
                         See NFT
@@ -65,5 +65,3 @@ export default function HighlightsData() {
     </div>
   );
 }
-
-//

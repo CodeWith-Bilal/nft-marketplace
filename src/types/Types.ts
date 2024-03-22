@@ -87,12 +87,12 @@ export interface ImagesData {
 
 export interface TrendCardProps {
   item: ImagesData;
-  display?: string;
+  view?: string;
 }
 
 export interface DiscoverCardProps {
   item: ImagesData;
-  display?: string;
+  view?: string;
 }
 
 export interface CardProps {

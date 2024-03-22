@@ -1,8 +1,8 @@
 import React from "react";
 import WorkCard from "../../../components/workCard/WorkCard";
-import image1 from "../../../assets/Setup Wallet Icon.png";
-import image2 from "../../../assets/Create Collection Icon.png";
-import image3 from "../../../assets/Start Earning Icon.png";
+import { Setupwallet } from "../../../assets/constants/constants";
+import { CreateCollection } from "../../../assets/constants/constants";
+import { StartEarning } from "../../../assets/constants/constants";
 import { description1, description2, description3 } from "../../../types/Types";
 
 export default function WorkData() {
@@ -18,17 +18,17 @@ export default function WorkData() {
       </div>
       <div className="h-[494px] md:h-[337px] lg:h-[439px] flex flex-col justify-center items-center md:flex-row gap-[20px] md:gap-[30px]">
         <WorkCard
-          image={image1}
+          image={StartEarning}
           name="Setup Your wallet"
           description={description1}
         />
         <WorkCard
-          image={image2}
+          image={CreateCollection}
           name="Create Collection"
           description={description2}
         />
         <WorkCard
-          image={image3}
+          image={Setupwallet}
           name="Start Earning"
           description={description3}
         />

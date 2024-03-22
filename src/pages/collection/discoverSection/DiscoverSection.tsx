@@ -1,7 +1,7 @@
 import React, { useMemo } from "react";
 import Loader from "../../../components/loader/Loader";
 import { useAppSelector } from "../../../store/store";
-import eye from "../../../assets/Eye.svg";
+import { Eye } from "../../../assets/constants/constants";
 import DiscoverCard from "../../../components/discoverCard/DiscoverCard";
 
 export default function DiscoverData() {
@@ -33,7 +33,7 @@ export default function DiscoverData() {
             type="button"
             className="w-[187px] h-[60px] rounded-[20px] border-2 border-[#A259FF] flex flex-row justify-center items-center gap-[12px]"
           >
-            <img src={eye} alt="" />
+            <img src={Eye} alt="" />
             <div className=" text-[16px] font-work-sans font-normal">
               See All
             </div>
@@ -45,7 +45,7 @@ export default function DiscoverData() {
           <DiscoverCard
             key={i}
             item={data}
-            display={i === 0 ? "" : i === 1 ? "md:hidden ls:block" : ""}
+            view={i === 0 ? "" : i === 1 ? "md:hidden ls:block" : ""}
           />
         ))}
       </div>
@@ -54,7 +54,7 @@ export default function DiscoverData() {
           type="button"
           className="w-[315px] h-[60px] rounded-[20px] border-2 border-[#A259FF] flex flex-row justify-center items-center gap-[12px]"
         >
-          <img src={eye} alt="" />
+          <img src={Eye} alt="" />
           <div className=" text-[16px] font-work-sans font-normal">See All</div>
         </button>
       </div>

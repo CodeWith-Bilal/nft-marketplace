@@ -1,6 +1,6 @@
 import { createAsyncThunk, createSlice } from "@reduxjs/toolkit";
 import { GetCollectionData, GetCollectionState } from "../../types/Types";
-import axios from "axios";
+import axiosInstance from "../../instance/instance";
 
 const initialState: GetCollectionState = {
   data: null,
@@ -20,7 +20,7 @@ export const getCollectionImages = createAsyncThunk(
           "x-api-key": process.env.REACT_APP_API_KEY,
         },
       };
-      const res = await axios.get(getCollectionUrl, options);
+      const res = await axiosInstance.get(getCollectionUrl, options);
       const result: GetCollectionData = res.data;
       return result;
     } catch (error) {

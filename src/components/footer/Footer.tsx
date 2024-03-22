@@ -1,10 +1,10 @@
 import React from "react";
-import store from "../../assets/Storefront.svg";
-import discord from "../../assets/DiscordLogo.svg";
-import youtube from "../../assets/YoutubeLogo.svg";
-import twitter from "../../assets/TwitterLogo.svg";
-import instagram from "../../assets/InstagramLogo.svg";
-import envelop from "../../assets/EnvelopeSimple.svg";
+import { Storefront } from "../../assets/constants/constants";
+import { DiscordLogo } from "../../assets/constants/constants";
+import { YoutubeLogo } from "../../assets/constants/constants";
+import { TwitterLogo } from "../../assets/constants/constants";
+import { Instagram } from "../../assets/constants/constants";
+import { Envelope } from "../../assets/constants/constants";
 import { Link } from "react-router-dom";
 
 const Footer: React.FC = () => {
@@ -21,7 +21,7 @@ const Footer: React.FC = () => {
                 >
                   <div className="flex justify-between items-center">
                     <img
-                      src={store}
+                      src={Storefront}
                       className="h-[30px] w-[30px] sm:h-[35px] sm:w-[35px] "
                       alt="NFT "
                     />
@@ -43,22 +43,22 @@ const Footer: React.FC = () => {
                 <div className="justify-start items-start gap-2.5 inline-flex">
                   <div className="w-8 h-8 relative text-stone-500">
                     <Link to="https://www.facebook.com/" target="_blank">
-                      <img src={discord} alt="" />
+                      <img src={DiscordLogo} alt="" />
                     </Link>
                   </div>
                   <div className="w-8 h-8 relative text-stone-500">
                     <Link to="https://www.instagram.com/" target="_blank">
-                      <img src={youtube} alt="" />
+                      <img src={YoutubeLogo} alt="" />
                     </Link>
                   </div>
                   <div className="w-8 h-8 relative text-stone-500">
                     <Link to="https://www.twitter.com/" target="_blank">
-                      <img src={twitter} alt="" />
+                      <img src={TwitterLogo} alt="" />
                     </Link>
                   </div>
                   <div className="w-8 h-8 relative text-stone-500">
                     <Link to="https://www.instagram.com/" target="_blank">
-                      <img src={instagram} alt="" />
+                      <img src={Instagram} alt="" />
                     </Link>
                   </div>
                 </div>
@@ -100,12 +100,12 @@ const Footer: React.FC = () => {
                   />
                 </div>
                 <button
-                  className="flex justify-center items-center bg-[#A259FF] w-[296px] h-[46px] md:ms-[-45px] md:w-[300px] md:h-[55px] ls:w-[211px] ls:h-[60px] rounded-[20px] msc:py-0 px-[50px] ls:px-[50px] gap-[12px] "
+                  className="flex justify-center items-center bg-[#A259FF] w-[296px] h-[46px] md:ms-[-45px] md:w-[300px] md:h-[55px] ls:w-[211px] ls:h-[60px] rounded-[20px] sm:py-0 px-[50px] ls:px-[50px] gap-[12px] "
                   type="button"
                   title="Subscribe"
                 >
                   <div className="w-5 h-5">
-                    <img src={envelop} alt="" className="w-5 h-5 relative" />
+                    <img src={Envelope} alt="" className="w-5 h-5 relative" />
                   </div>
                   <div className=" font-semibold text-[16px] font-work-sans ">
                     Subscribe

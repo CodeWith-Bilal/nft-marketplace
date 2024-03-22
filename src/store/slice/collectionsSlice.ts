@@ -1,6 +1,6 @@
 import { createAsyncThunk, createSlice } from "@reduxjs/toolkit";
 import { CollectionsData, CollectionsState } from "../../types/Types";
-import axios from "axios";
+import axiosInstance from "../../instance/instance";
 
 const initialState: CollectionsState = {
   data: [],
@@ -18,7 +18,7 @@ export const collectionsImages = createAsyncThunk("fetchImage", async () => {
         "x-api-key": process.env.REACT_APP_API_KEY,
       },
     };
-    const res = await axios.get(collectionsUrl, options);
+    const res = await axiosInstance.get(collectionsUrl, options);
     const result: CollectionsData[] = res.data.collections.filter(
       (e: CollectionsData) => e.image_url !== "" && e.is_nsfw === false
     );

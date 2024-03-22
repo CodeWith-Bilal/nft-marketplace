@@ -28,7 +28,7 @@ export const getNftImages = createAsyncThunk<GetNftData, GetNftImagesParams>(
       if (error instanceof Error) {
         throw new Error(error?.message || "Error while fetching data");
       } else {
-        throw new Error("Unknown error occurred");
+        throw new Error("An error has been occurred");
       }
     }
   }
